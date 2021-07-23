@@ -1,0 +1,127 @@
+:root{
+    --vermelho: #E50914;
+    --preto: rgb(20, 20, 20);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header .logo{
+    margin:10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--vermelho);
+}
+
+header nav a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.2s;
+}
+header nav a:hover{
+    color: rgba(220, 220, 220, 0.815);
+}
+
+.navbar-social{
+    margin-right: 50px;
+}
+
+.navbar-social .btn-social{
+    margin-right: 10px;
+
+    background-color: rgba(20,20,20,.50);
+    border: transparent;
+    color: white;
+
+}
+
+.btn-social{
+    padding: 10px;
+}
+
+
+
+
+/*V Referente aos principal fime V*/
+
+.principal-filme{
+    background:linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)100%),url('/images/lightUpSky.jpg');
+
+    height: 700px;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.principal-filme .titulo{   
+    margin-top: 15% ;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+.principal-filme .descricao{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.btn{
+    background-color: rgba(0,0,0,.50);
+    border: transparent;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+
+    cursor:pointer;
+    transition: 0.3s ease-out;
+}
+
+.btn:hover{  
+    background-color: white;
+    color: black;
+}
+
+button i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 50px;
+    width: 60%;
+}
+
+.box-filmes{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
